@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
+</head>
+<body>
+    <h1 id="title">Resume Survey Form</h1>
+    <p id="description">Hello! This survey is meant to get an idea of what you are looking for in a resume. Please fill out the questions below.</p>
+
+    <form id="survey-form">
+    
+    <div id="identification">
+<label id="name-label">
+    Name Here
+    <input id="name" type="text" required placeholder="Please enter your name here">
+</label>
+
+<label id="email-label">
+    Email Here
+    <input id="email" type="email" required placeholder="Please enter your email">
+</label>
+
+<label id="number-label">
+    Age Here
+    <input id="number" type="number" min="16" max="120" required placeholder="Age" maxlength="4" size="4">
+</label>
+</div>
+
+<div id="q1">
+<p>Do you currently have a resume?</p>
+<select id="dropdown" name="resume-choice" required>
+    <option>Yes</option>
+    <option>No</option>
+    <option>Yes, but incomplete</option>
+</select>
+</div>
+
+<div id="q2">
+<fieldset>
+    <p>What type of services are you looking for?</p>
+    <label for="service-1">
+        <input type="checkbox" id="service-1" value="service-1" class="inline" name="resume-service"> Create a resume
+    </label>
+
+    <label for="service-2">
+        <input type="checkbox" id="service-2" value="service-2" class="inline" name="resume-service"> Edit current resume
+    </label>
+
+    <label for="service-3">
+        <input type="checkbox" id="service-3" value="service-2" class="inline" name="resume-service"> Create a personal website
+    </label>
+</fieldset>
+</div>
+
+<div id="q3">
+<fieldset>
+    <label for="referral"> How did you hear about me?
+        <input type="checkbox" name="opt1" value="1">News</input>
+        <input type="checkbox" name="opt2" value="2">Website</input>
+        <input type="checkbox" name="opt3" value="3">Forum</input>
+        <input type="checkbox" name="opt4" value="4">Other</input>
+    </label>
+</fieldset>
+</div>
+
+<fieldset>
+    <div id="feedback-div">
+    <label for="bio"> Please provide any feedback:
+        <textarea id="feedback" name="feedback" rows="3" col="30" placeholder="Insert feedback here"></textarea>
+    </label>
+    </div>
+</fieldset>
+
+<div id="sub-button">
+<input type="submit" id="submit" value="Submit">
+</div>
+    </form>
+
+
+</body>
+</html>
